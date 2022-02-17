@@ -1,0 +1,167 @@
+<html lang="en">
+<head>
+    <title>My CSS Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul class="topnav" id="dropdownButton">
+            <li>
+                <a href="#home">Home</a>  
+            </li>
+            <li>
+                <a href="#news">News</a>  
+            </li>
+            <li>
+                <a href="#contact">Contact</a>  
+            </li>
+            <li>
+                <a href="#about">About</a>  
+            </li>
+            <li class="topnav-right">
+                <a href="#signup">Sign Up</a>
+            </li>
+            <li class="topnav-right">
+                <a href="#signin">Sign In</a>  
+            </li>
+            <li class="dropdownIcon" onclick="dropdownMenu()">
+                <a href="javascript:void(0);">&#9776;</a>
+            </li>
+        </ul>          
+    </nav>
+
+    <div class="container" id="section-1-gradient">
+        <div class="row">
+            <div class="col-6" >
+                <div class="leftside-col">
+                    <h1 class="large">Captain Maverick</h1>
+                    <h1 class="large">Made for Counter Strike</h1>
+                </div>
+                <form >
+                    <div class="leftside-col">
+                        <h2>Username</h2>
+                        <input type="text" class="inputbox" name="username" placeholder="Username">
+                        <h2>Password</h2>
+                        <input type="text" class="inputbox" name="password" placeholder="Password">
+                    </div>
+                </form>
+            </div>
+            <div class="col-6">
+                <div class="rightside-col">
+                    <div class="videoContainer">
+                        <iframe width="450" height="300" src="https://www.youtube.com/embed/OuE3zeeOi4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                 </div>
+        </div>
+
+    </div>
+
+    <header>
+        <h1 class="section-2-header">The CSGO Gaming Pros</h1>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="triangle.png">
+                    </div>
+                    <label>Chat with me</label>
+                    <p>I'm a gamer. Not because I don't have a life. But because I choose to have many.</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="logo.png">
+                    </div>
+                    <label>Learn to Code</label>
+                    <p>Failure doesn't mean the game is over, it means try again with experience.</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="shape.png">
+                    </div>
+                    <label>Build an Empire</label>
+                    <p>I chose to be a gamer because nothing epic ever happens in real life.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="learnMore">Learn More</button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-7">
+                <article>
+                    <p>
+                        Video game play may provide learning, health, social benefits, review finds. ... Playing video games, including violent shooter games, may boost children's learning, health and social skills, according to a review of research in American Psychologist.
+                    </p>
+                </article>
+            </div>
+            <div class="col-5">
+                <div class="slopeIcon">
+                    <img src="csgoo.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footsy">
+        <div class="row">
+            <div class="col-3 mobileStake">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Blogs</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+            <div class="col-3 mobileStake">
+                <h1>Product</h1>
+                <ul>
+                    <li>Computer</li>
+                    <li>Mobile</li>
+                    <li>Laptop</li>
+                </ul>
+            </div>
+            <div class="col-3 mobileStake">
+                <h1>Learn More</h1>
+                <ul>
+                    <li>Developers</li>
+                    <li>Designers</li>
+                    <li>Hackers</li>
+                </ul>
+            </div>
+            <div class="col-3 mobileStake">
+                <h1>Support</h1>
+                <ul>
+                    <li>Help</li>
+                    <li>QA</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function dropdownMenu() {
+            var x = document.getElementById("dropdownButton");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+</html>
